@@ -1,27 +1,44 @@
 <div [@routerTransition]>
-    <app-page-header [heading]="'Cadastro'" [icon]="'fa-edit'"></app-page-header>
+    <!-- <app-page-header [heading]="'Cadastro'" [icon]="'fa-edit'"></app-page-header> -->
 
         <!-- Usando Charts -->
     <div class="card mb-3">
         <div class="card-header">
-            Cados do Paciente
+            Dados do Médico
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <fieldset class="form-group">
-                        <label>Número do Prontuário:</label>
-                        <input type="number" class="form-control" disabled="">
-                </fieldset>            
+                        <label>CRM:</label>
+                        <input type="number" class="form-control">
+                    </fieldset>            
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-lg-6">    
                     <fieldset class="form-group">
-                        <label>Nome do Paciente:</label>
-                        <input class="form-control" type="text" placeholder="Nome do paciente">
+                        <label>Nome do Médico:</label>
+                        <input class="form-control" type="text" placeholder="Nome completo">
                         <p class="help-block"></p>
                     </fieldset>
+                </div>
+                <div class="col-lg-4">
+                    <fieldset class="form-group">
+                        <label>Email:</label>
+                        <input type="text" class="form-control" placeholder="exemplo@exemplo.com.br">
+                    </fieldset>
+                </div>
+            </div>
+       
+            <div class="row">
+                <div class="col-lg-4">
+                    <label>Especialidade:</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
                 </div>
                 <div class="col-lg-2">    
                     <fieldset class="form-group">
@@ -84,8 +101,17 @@
                 </div>
             </div>
         </div>
-        <div class="card-footer">
-            <button class="btn btn-info btn-sm" (click)="randomize()">Concluir</button>
+        <div class="row card-footer">
+            <div class="col-lg-2">
+                <button class="btn btn-info btn-sm" (click)="randomize()">Cancelar</button>
+            </div>
+            <div class="col-lg-3">
+                <!--Espaço em Branco-->
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-info btn-sm" (click)="randomize()">Concluir</button>
+            </div>
+            
         </div>
     </div>
 

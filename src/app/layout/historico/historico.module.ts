@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { HistoricoComponent } from './historico.component';
 import { HistoricoRoutingModule } from './historico-routing.module';
 
-
 @NgModule({     
     imports: [CommonModule,
-              HistoricoRoutingModule],
+              HistoricoRoutingModule
+            ],
     declarations: [HistoricoComponent]
 })
 
