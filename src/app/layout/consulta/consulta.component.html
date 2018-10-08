@@ -1,3 +1,56 @@
-<p>
-  consulta works!
-</p>
+<div [@routerTransition]>
+
+  <div class="card mb-3">
+    <div class="card-header">
+        Lista de Agendamentos
+    </div>
+    <div class="card-body">
+        <!-- <div uib-accordion-group class="panel-danger" heading="Delete account">
+            <p>Please, to delete your account, click the button below</p>
+            <button class="btn btn-danger">Delete</button>
+        </div> -->
+
+        <div class="col-lg-4">
+          
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-lg-2">
+          <button class="btn btn-info btn-sm" (click)="randomize()">Buscar Agendamentos</button>
+        </div>
+    </div>
+  </div>
+</div>
