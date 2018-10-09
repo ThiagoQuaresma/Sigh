@@ -4,7 +4,23 @@ import { AgendaComponent } from './agenda.component';
 
 const routes: Routes = [
     {
-        path:'', component: AgendaComponent
+        path: '',
+        data:{
+            title: 'Agenda'
+        },
+        children: [
+            {
+                path: '',
+                component: AgendaComponent,
+                data: {
+                    title: 'Agenda'
+                }
+            },
+            {
+                path: 'agendamento',
+                loadChildren: './agendamento/agendamento.module#AgendamentoModule'
+            }
+        ]
     }
 ];
 
