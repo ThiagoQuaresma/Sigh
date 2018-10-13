@@ -19,6 +19,7 @@ const routes: Routes = [
             { path: 'agenda', loadChildren: './agenda/agenda.module#AgendaModule' },
             { path: 'consulta', loadChildren: './consulta/consulta.module#ConsultaModule' },
             { path: 'historico', loadChildren: './historico/historico.module#HistoricoModule' },
+            { path: 'agendamento', loadChildren: './agenda/agendamento/agendamento.module#AgendamentoModule' },
         ]
     }
 ];

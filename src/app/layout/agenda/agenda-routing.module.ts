@@ -6,14 +6,14 @@ const routes: Routes = [
     {
         path: '',
         data:{
-            title: 'Agenda'
+            title: 'agendamento'
         },
         children: [
             {
                 path: '',
                 component: AgendaComponent,
                 data: {
-                    title: 'Agenda'
+                    title: 'agendamento'
                 }
             },
             {

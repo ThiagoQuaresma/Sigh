@@ -64,6 +64,10 @@
             <i class="fa fa-caret-down"></i>&nbsp;
             <span>{{ 'More Themes' | translate }}</span>
         </a> -->
+        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-th-list"></i>&nbsp;
+            <span>{{ 'Component' | translate }}</span>
+        </a>
         <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-edit"></i>&nbsp;
             <span>{{ 'Cadastrar Médico' | translate }}</span>
@@ -89,7 +93,7 @@
             <li class="nested" [class.expand]="showMenu === 'pages'">
                 <ul class="submenu">
                     <li>
-                        <a href="javascript:void(0)">
+                        <a [routerLink]="['/agendamento']" [routerLinkActive]="['router-link-active']" class="list-group-item">
                             <i class="fa fa-monument"></i>&nbsp;
                             <span>{{ 'Incluir Medicamento' | translate }}</span>
                         </a>

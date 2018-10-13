@@ -21,6 +21,7 @@ import {
     TimepickerComponent
 } from './components';
 import { PageHeaderModule } from '../../shared';
+import { NewModalComponent } from './components/new-modal/new-modal.component';
 
 @NgModule({
     imports: [
@@ -45,7 +46,8 @@ import { PageHeaderModule } from '../../shared';
         TabsComponent,
         RatingComponent,
         TooltipComponent,
-        TimepickerComponent
+        TimepickerComponent,
+        NewModalComponent
     ]
 })
 export class BsComponentModule {}
