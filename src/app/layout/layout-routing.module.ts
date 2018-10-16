@@ -1,3 +1,4 @@
+import { NewPacienteModule } from './new-paciente/new-paciente.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './layout.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
             { path: 'consulta', loadChildren: './consulta/consulta.module#ConsultaModule' },
             { path: 'historico', loadChildren: './historico/historico.module#HistoricoModule' },
             { path: 'agendamento', loadChildren: './agenda/agendamento/agendamento.module#AgendamentoModule' },
+            { path: 'new-paciente', loadChildren: './new-paciente/new-paciente.module#NewPacienteModule'},
         ]
     }
 ];

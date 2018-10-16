@@ -84,6 +84,10 @@
             <i class="fa fa-th-list"></i>&nbsp;
             <span>{{ 'Verificar Historico' | translate }}</span>
         </a>
+        <a [routerLink]="['/newpaciente']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-th-list"></i>&nbsp;
+            <span>{{ 'Cadastrar Paciente' | translate }}</span>
+        </a>
         <!-- Menu Farmacia-->
         <div class="nested-menu">
             <a class="list-group-item" (click)="addExpandClass('pages')">
