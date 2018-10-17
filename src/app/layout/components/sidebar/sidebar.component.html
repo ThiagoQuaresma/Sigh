@@ -68,12 +68,12 @@
             <i class="fa fa-th-list"></i>&nbsp;
             <span>{{ 'Component' | translate }}</span>
         </a> -->
-        <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <!-- <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
             <span>{{ 'Charts' | translate }}</span>
-        </a>
+        </a> -->
         <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-edit"></i>&nbsp;
+            <i class="fa fa-user-md"></i>&nbsp;
             <span>{{ 'Cadastrar Médico' | translate }}</span>
         </a>
         <a [routerLink]="['/agenda']" [routerLinkActive]="['router-link-active']" class="list-group-item">
@@ -81,15 +81,15 @@
             <span>{{ 'Agendar Consulta' | translate }}</span>
         </a>
         <a [routerLink]="['/consulta']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-th-list"></i>&nbsp;
+            <i class="fa fa-list-alt"></i>&nbsp;
             <span>{{ 'Listar Consultas' | translate }}</span>
         </a>
         <a [routerLink]="['/historico']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-th-list"></i>&nbsp;
+            <i class="fa fa-history"></i>&nbsp;
             <span>{{ 'Verificar Historico' | translate }}</span>
         </a>
-        <a [routerLink]="['/newpaciente']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-th-list"></i>&nbsp;
+        <a [routerLink]="['/new-paciente']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-user-plus"></i>&nbsp;
             <span>{{ 'Cadastrar Paciente' | translate }}</span>
         </a>
         <!-- Menu Farmacia-->
@@ -102,13 +102,13 @@
                 <ul class="submenu">
                     <li>
                         <a [routerLink]="['/agendamento']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-                            <i class="fa fa-monument"></i>&nbsp;
+                            <i class="fa fa-plus"></i>
                             <span>{{ 'Incluir Medicamento' | translate }}</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">
-                            <i class="fa fa-monument"></i>&nbsp;
+                            <i class="fa fa-search"></i>&nbsp;
                             <span>{{ 'Buscar Medicamento' | translate }}</span>
                         </a>
                     </li>
