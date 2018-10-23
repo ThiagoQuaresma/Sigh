@@ -22,6 +22,7 @@ const routes: Routes = [
             { path: 'historico', loadChildren: './historico/historico.module#HistoricoModule' },
             { path: 'agendamento', loadChildren: './agenda/agendamento/agendamento.module#AgendamentoModule' },
             { path: 'new-paciente', loadChildren: './new-paciente/new-paciente.module#NewPacienteModule'},
+            { path: 'atendimento', loadChildren: './atendimento/atendimento.module#AtendimentoModule'},
         ]
     }
 ];

@@ -76,6 +76,10 @@
             <i class="fa fa-user-md"></i>&nbsp;
             <span>{{ 'Cadastrar Médico' | translate }}</span>
         </a>
+        <a [routerLink]="['/atendimento']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i>&nbsp;
+            <span>{{ 'Realizar Consulta' | translate }}</span>
+        </a>
         <a [routerLink]="['/agenda']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-edit"></i>&nbsp;
             <span>{{ 'Agendar Consulta' | translate }}</span>
