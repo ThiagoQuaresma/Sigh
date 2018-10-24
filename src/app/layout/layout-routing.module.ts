@@ -23,6 +23,7 @@ const routes: Routes = [
             { path: 'agendamento', loadChildren: './agenda/agendamento/agendamento.module#AgendamentoModule' },
             { path: 'new-paciente', loadChildren: './new-paciente/new-paciente.module#NewPacienteModule'},
             { path: 'atendimento', loadChildren: './atendimento/atendimento.module#AtendimentoModule'},
+            { path: 'lista-medicos', loadChildren: './lista-medicos/lista-medicos.module#ListaMedicosModule'},
         ]
     }
 ];
