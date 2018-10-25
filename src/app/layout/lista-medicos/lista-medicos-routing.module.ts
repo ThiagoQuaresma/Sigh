@@ -4,7 +4,23 @@ import { ListaMedicosComponent } from './lista-medicos.component';
 
 const routes: Routes = [
     {
-        path:'', component: ListaMedicosComponent
+        path: '',
+        data:{
+            title: 'new-medico'
+        },
+        children: [
+            {
+                path: '',
+                component: ListaMedicosComponent,
+                data: {
+                    title: 'new-medico'
+                }
+            },
+            {
+                path: 'new-medico',
+                loadChildren: './new-medico/new-medico.module#NewMedicoModule'
+            }
+        ]
     }
 ];
 

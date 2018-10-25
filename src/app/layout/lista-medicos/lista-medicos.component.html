@@ -1,71 +1,87 @@
 <div [@routerTransition]>
+    <!-- <app-page-header [heading]="'Cadastro'" [icon]="'fa-edit'"></app-page-header> -->
 
-  <div class="card mb-3">
-    <div class="card-header">
-        Dados do Agendamento
-        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-          <i class="fa fa-gear"></i>  <span class="caret"></span>
-        </button>
+    <!-- Usando Charts -->
+    <div class="card mb-3">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-lg-2">
+                    <Span>Lista de Medicos</Span>
+                </div>
+                <div class="col-lg-8">
 
-      </div>
-    </div>
-    <div class="card-body">
-        <!-- <div uib-accordion-group class="panel-danger" heading="Delete account">
-            <p>Please, to delete your account, click the button below</p>
-            <button class="btn btn-danger">Delete</button>
-        </div> -->
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" routerLink="./new-medico">
+                        <i class="fa fa-plus"></i> <span class="caret"> Novo Médico</span>
+                    </button>
+                </div>
 
-        <div class="col-lg-4">
-            <label>Especialidade:</label>
-            <select class="form-control">
-                <option>Oftalmologia</option>
-                <option>Ortopedia</option>
-                <option>Clinico Geral</option>
-                <option>Cardiologia</option>
-                <option>Pediatria</option>
-            </select>
+            </div>
         </div>
-        <div class="card-body table-responsive">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Medico</th>
-                    <th>Especialidade</th>
-                    <th>Opções</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Dr Augusto Leal</td>
-                    <td>Ortopedia</td>
-                    <td><button class="btn btn-link"><i class="fa fa-calendar" routerLink="./agendamento"></i></button>        </td>
-                </tr>
-                <tr>
-                    <td>Dr Daniel Campanha</td>
-                    <td>Ortopedia</td>
-                    <td><button class="btn btn-link"><i class="fa fa-calendar" routerLink="./agendamento"></i></button>        </td>
-                </tr>
-                <tr>
-                    <td>Dr Thiago Quaresma</td>
-                    <td>Ortopedia</td>
-                    <td><button class="btn btn-link"><i class="fa fa-calendar" routerLink="./agendamento"></i></button>        </td>
-                </tr>
-                </tbody>
-            </table>
+        <div class="card-body">
+
+            <div class="card-body table-responsive">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Médico</th>
+                            <th>Telefone</th>
+                            <th>E-mail</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Larissa Biasi</td>
+                            <td>(21)98484-9090</td>
+                            <td>larissinha@gmail.com</td>
+                            <td>
+                                <button class="btn btn-link"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-link"><i class="fa fa-trash"></i></button>
+                                <!-- <button class="btn btn-link"><i class="fa">&#xf232;</i></button>-->
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>João Biasi</td>
+                            <td>(21)99554-6060</td>
+                            <td>joaobiasi@gmail.com</td>
+                            <td>
+                                <button class="btn btn-link"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-link"><i class="fa fa-trash"></i></button>
+                                <!-- <button class="btn btn-link"><i class="fa">&#xf232;</i></button>-->
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Juliana Biasi</td>
+                            <td>(21)99757-0505</td>
+                            <td>jujubiasi@gmail.com</td>
+                            <td>
+                                <button class="btn btn-link"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-link"><i class="fa fa-trash"></i></button>
+                                <!-- <button class="btn btn-link"><i class="fa">&#xf232;</i></button>-->
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="row">
+                <div class="col-lg-2">
+                    <!-- <button class="btn btn-info btn-sm" (click)="randomize()">Cancelar</button> -->
+                </div>
+                <div class="col-lg-3">
+                    <!--Espaço em Branco-->
+                </div>
+                <div class="col-lg-2">
+                    <!-- <button class="btn btn-info btn-sm" (click)="randomize()">Concluir</button> -->
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card-footer">
-      <div class="row">
-        <div class="col-lg-2">
-            <!-- <button class="btn btn-info btn-sm" (click)="randomize()">Cancelar</button> -->
-        </div>
-        <div class="col-lg-3">
-            <!--Espaço em Branco-->
-        </div>
-        <div class="col-lg-2">
-            <!-- <button class="btn btn-info btn-sm" (click)="randomize()">Listar</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
