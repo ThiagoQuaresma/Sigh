@@ -22,7 +22,7 @@
             <p>Please, to delete your account, click the button below</p>
             <button class="btn btn-danger">Delete</button>
         </div> -->
-
+        <div class="row">
         <div class="col-lg-2">
             <fieldset class="form-group">
                 <label>Data:</label>
@@ -30,8 +30,24 @@
             </fieldset>
         </div>
 
-        <div class="col-lg-4">
-          
+        <div class="col-lg-3">
+                <label>Especialidade:</label>
+                <select class="form-control">
+                    <option>Oftalmologia</option>
+                    <option>Ortopedia</option>
+                    <option>Clinico Geral</option>
+                    <option>Cardiologia</option>
+                    <option>Pediatria</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <label>Médico:</label>
+                <select class="form-control">
+                    <option>Dr Augusto Leal</option>
+                    <option>Dr Daniel Campanha</option>
+                    <option>Dr Thiago Quaresma</option>
+                </select>
+            </div>
         </div>
         <div class="card-body table-responsive">
                
@@ -95,73 +111,6 @@
                 </tbody>
             </table>
             
-            <!-- Tabela de Daniel -->
-
-            <!-- <table class="table">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Nome </th>
-                        <th>Idade</th>
-                        <th>CPF</th>
-                        <th>Curso(s)</th>
-                        <th>Situação</th>
-                        <th>Opções</th>
-                      </tr>
-                      <tr>
-                        <td>Daniel Campanha</td>
-                        <td>24</td>
-                        <td>123.123.123-44</td>
-                        <td>Canto, Atuação</td>
-                        <td>Ativo</td>
-                        <td>
-                          <button class="btn btn-link"><i class="fa fa-calendar" routerLink="./altercliente"></i></button>
-                          <button class="btn btn-link"><i class="fa fa-trash"></i></button>
-                          <button class="btn btn-link"><i class="fa">&#xf232;</i></button>
-                          <button class="btn btn-link"><i class="fa fa-credit-card"></i></button>
-                        </td>
-                </tbody>
-            </table>  -->
-
-            <!-- <table class="table">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-                </tbody>
-            </table> -->
-
-
             <!-- Encerrando tabela -->
             
         </div>
@@ -169,7 +118,7 @@
     <div class="card-footer">
       <div class="row">
         <div class="col-lg-2">
-          <button class="btn btn-info btn-sm" (click)="randomize()">Buscar Agendamentos</button>
+          <!-- <button class="btn btn-info btn-sm" (click)="randomize()">Buscar Agendamentos</button> -->
         </div>
     </div>
   </div>

@@ -19,6 +19,17 @@ const routes: Routes = [
             {
                 path: 'new-paciente',
                 loadChildren: './new-paciente/new-paciente.module#NewPacienteModule'
+            },
+            {
+                path: '',
+                component: PacienteComponent,
+                data: {
+                    title: 'alter-paciente'
+                }
+            },
+            {
+                path: 'alter-paciente',
+                loadChildren: './alter-paciente/alter-paciente.module#AlterPacienteModule'
             }
         ]
     }
