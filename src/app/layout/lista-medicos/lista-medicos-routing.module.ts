@@ -6,7 +6,7 @@ const routes: Routes = [
     {
         path: '',
         data:{
-            title: 'new-medico'
+            title: 'medico'
         },
         children: [
             {
@@ -19,8 +19,21 @@ const routes: Routes = [
             {
                 path: 'new-medico',
                 loadChildren: './new-medico/new-medico.module#NewMedicoModule'
+            },
+            {
+                path: '',
+                component: ListaMedicosComponent,
+                data: {
+                    title: 'alter-medico'
+                }
+            },
+            {
+                path: 'alter-medico',
+                loadChildren: './alter-medico/alter-medico.module#AlterMedicoModule'
             }
+            
         ]
+        
     }
 ];
 

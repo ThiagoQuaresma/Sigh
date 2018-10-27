@@ -2,13 +2,27 @@
 
   <div class="card mb-3">
     <div class="card-header">
-        Lista de Agendamentos
+        <div class="row">
+            <div class="col-lg-3">
+                <Span>Lista de Agendamentos</Span>
+            </div>
+            <div class="col-lg-7">
+
+            </div>
+            <div class="col-lg-2">
+                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" routerLink="./new-consulta">
+                    <i class="fa fa-plus"></i> <span class="caret"> Nova Consulta</span>
+                </button>
+            </div>
+
+        </div>
     </div>
     <div class="card-body">
         <!-- <div uib-accordion-group class="panel-danger" heading="Delete account">
             <p>Please, to delete your account, click the button below</p>
             <button class="btn btn-danger">Delete</button>
         </div> -->
+
         <div class="col-lg-2">
             <fieldset class="form-group">
                 <label>Data:</label>

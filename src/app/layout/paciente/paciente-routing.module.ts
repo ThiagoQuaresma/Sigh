@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ConsultaComponent } from './consulta.component';
+import { PacienteComponent } from './paciente.component';
 
 const routes: Routes = [
     {
         path: '',
         data:{
-            title: 'new-consulta'
+            title: 'new-paciente'
         },
         children: [
             {
                 path: '',
-                component: ConsultaComponent,
+                component: PacienteComponent,
                 data: {
-                    title: 'new-consulta'
+                    title: 'new-paciente'
                 }
             },
             {
-                path: 'new-consulta',
-                loadChildren: './new-consulta/new-consulta.module#NewConsultaModule'
+                path: 'new-paciente',
+                loadChildren: './new-paciente/new-paciente.module#NewPacienteModule'
             }
         ]
     }
@@ -29,6 +29,6 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 
-export class ConsultaRoutingModule{
+export class PacienteRoutingModule{
 
 }
