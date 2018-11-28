@@ -3,6 +3,7 @@
     <div class="card mb-3">
         <div class="card-header">
             Dados do Agendamento
+            <!-- <p *ngFor= "let num of dia.number">{{num}}</p> -->
         </div>
         <div class="card-body">
             <!-- <div uib-accordion-group class="panel-danger" heading="Delete account">
@@ -30,9 +31,9 @@
                 </div>
                 <div class="col-lg-3">
                     <label>Mês:</label>
-                    <select class="form-control">
-                        <option>Janeiro</option>
-                        <option>Fevereiro</option>
+                    <select class="form-control" onchange= diasNoMes(i,getFullYear())> 
+                        <option *ngFor= "let mes of mes.month; let i = index">{{mes.m}}</option>
+                        <!-- <option>Fevereiro</option>
                         <option>Março</option>
                         <option>Abril</option>
                         <option>Maio</option>
@@ -42,17 +43,17 @@
                         <option>Setembro</option>
                         <option>Outubro</option>
                         <option>Novembro</option>
-                        <option>Dezembro</option>
+                        <option>Dezembro</option> -->
                     </select>
                 </div>
             </div>
             <p></p>
-            <div class="row">
+            <div *ngFor= "let num of dia.number; let i = index" class="row">
                 <div class="col-lg-12">
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown">
-                        <span class="caret">1</span>
+                    <button *ngFor= "let i of num" type="button" class="btn btn-primary btn-sm" data-toggle="dropdown">
+                        <span class="caret">{{i}}</span>
                     </button>
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown">
+                    <!-- <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown">
                         <span class="caret">2</span>
                     </button>
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown">
@@ -141,7 +142,7 @@
                     </button>
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="dropdown">
                         <span class="caret">31</span>
-                    </button>
+                    </button> -->
                 </div>
             </div>
 
@@ -154,34 +155,34 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>08:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>09:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>09:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>10:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
+                            <td>08:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>09:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>09:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>10:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
                         </tr>
                         <tr>
-                            <td>10:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>11:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>11:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>12:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
+                            <td>10:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>11:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>11:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>12:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
                         </tr>
                         <tr>
-                            <td>12:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>13:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>13:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>14:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
+                            <td>12:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>13:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>13:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>14:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
                         </tr>
                         <tr>
-                            <td>14:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>15:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>15:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>16:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
+                            <td>14:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>15:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>15:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>16:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
                         </tr>
                         <tr>
-                            <td>17:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>18:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>18:30&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
-                            <td>19:00&nbsp;&nbsp;<app-modal></app-modal><button class="btn btn-link"><i class="fa fa-trash"></i></button></td>
+                            <td>17:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>18:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>18:30&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
+                            <td>19:00&nbsp;&nbsp;<app-modal></app-modal><app-new-modal></app-new-modal></td>
                         </tr>
                     </tbody>
                 </table>
