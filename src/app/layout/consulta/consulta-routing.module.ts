@@ -6,7 +6,7 @@ const routes: Routes = [
     {
         path: '',
         data:{
-            title: 'new-consulta'
+            title: 'consulta'
         },
         children: [
             {
@@ -19,6 +19,17 @@ const routes: Routes = [
             {
                 path: 'new-consulta',
                 loadChildren: './new-consulta/new-consulta.module#NewConsultaModule'
+            },
+            {
+                path: '',
+                component: ConsultaComponent,
+                data: {
+                    title: 'cadastrar-consulta'
+                }
+            },
+            {
+                path: 'cadastrar-consulta',
+                loadChildren: './cadastrar-consulta/cadastrar-consulta.module#CadastrarConsultaModule'
             }
         ]
     }

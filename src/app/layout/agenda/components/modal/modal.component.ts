@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { routerTransition } from '../../../../router.animations';
 
 @Component({
     selector: 'app-modal',
     templateUrl: './modal.component.html',
-    styleUrls: ['./modal.component.scss']
+    styleUrls: ['./modal.component.scss'],
+    animations: [routerTransition()]
 })
 export class ModalComponent {
     closeResult: string;
